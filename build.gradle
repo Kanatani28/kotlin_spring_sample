@@ -1,6 +1,5 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
-	id 'war'
 	id 'org.jetbrains.kotlin.jvm' version '1.2.71'
 	id 'org.jetbrains.kotlin.plugin.spring' version '1.2.71'
 }
@@ -25,7 +24,6 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'mysql:mysql-connector-java'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
