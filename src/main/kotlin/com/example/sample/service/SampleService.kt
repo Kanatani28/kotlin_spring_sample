@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional
 
 @Service
 @Transactional
-class SampleService(val mapper: SampleMapper) {
+class SampleService(private val mapper: SampleMapper) {
 
     fun find() : List<SampleModel> = mapper.find()
 
